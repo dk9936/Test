@@ -2,43 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Web Page Title</title>
-    <!-- Add your CSS links or styles here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Responsive and Zoomable HTML</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 100%;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Your Web Page</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-            </ul>
-        </nav>
-    </header>
+    <h1>Responsive and Zoomable HTML</h1>
+    <p>This is a responsive and zoomable HTML content.</p>
+    <!-- Add your content here -->
 
-    <main>
-        <section id="section1">
-            <h2>Section 1</h2>
-            <p>This is the content of Section 1.</p>
-        </section>
+    <!-- Zoom controls -->
+    <div id="zoomControls">
+        <button onclick="zoomIn()">Zoom In</button>
+        <button onclick="zoomOut()">Zoom Out</button>
+        <button onclick="resetZoom()">Reset Zoom</button>
+    </div>
 
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>This is the content of Section 2.</p>
-        </section>
+    <script>
+        // JavaScript for zooming
+        let currentScale = 1.0;
+        const zoomStep = 0.2;
+        const minScale = 1.0;
+        const maxScale = 5.0;
+        const content = document.body;
 
-        <section id="section3">
-            <h2>Section 3</h2>
-            <p>This is the content of Section 3.</p>
-        </section>
-    </main>
+        function setTransform(scale) {
+            content.style.transform = `scale(${scale})`;
+        }
 
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
+        function zoomIn() {
+            if (currentScale < maxScale) {
+                currentScale += zoomStep;
+                setTransform(currentScale);
+            }
+        }
 
-    <!-- Add your JavaScript scripts or links here -->
+        function zoomOut() {
+            if (currentScale > minScale) {
+                currentScale -= zoomStep;
+                setTransform(currentScale);
+            }
+        }
+
+        function resetZoom() {
+            currentScale = 1.0;
+            setTransform(currentScale);
+        }
+    </script>
 </body>
 </html>
