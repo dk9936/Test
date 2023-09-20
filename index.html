@@ -1,61 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
-    <title>Responsive and Zoomable HTML</title>
-    <style>
-        /* Add your CSS styles here */
-        body {
-            font-family: Arial, sans-serif;
-            padding: 20px;
-            max-width: 100%;
-            overflow-x: auto;
-        }
-    </style>
-</head>
-<body>
-    <h1>Responsive and Zoomable HTML</h1>
-    <p>This is a responsive and zoomable HTML content.</p>
-    <!-- Add your content here -->
-
-    <!-- Zoom controls -->
-    <div id="zoomControls">
-        <button onclick="zoomIn()">Zoom In</button>
-        <button onclick="zoomOut()">Zoom Out</button>
-        <button onclick="resetZoom()">Reset Zoom</button>
-    </div>
-
-    <script>
-        // JavaScript for zooming
-        let currentScale = 1.0;
-        const zoomStep = 0.2;
-        const minScale = 1.0;
-        const maxScale = 5.0;
-        const content = document.body;
-
-        function setTransform(scale) {
-            content.style.transform = `scale(${scale})`;
-        }
-
-        function zoomIn() {
-            if (currentScale < maxScale) {
-                currentScale += zoomStep;
-                setTransform(currentScale);
-            }
-        }
-
-        function zoomOut() {
-            if (currentScale > minScale) {
-                currentScale -= zoomStep;
-                setTransform(currentScale);
-            }
-        }
-
-        function resetZoom() {
-            currentScale = 1.0;
-            setTransform(currentScale);
-        }
-    </script>
-</body>
-</html>
+<h2 style="margin-top:10pt; margin-bottom:0pt; text-align:center; page-break-inside:avoid; page-break-after:avoid; line-height:115%; font-size:13pt;"><u><span style="font-family:Cambria; color:#4f81bd;">Help (Process-Meter Enquiry)</span></u></h2>
+<p style="margin-top:0pt; margin-bottom:10pt;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0pt; margin-bottom:10pt; line-height:115%; font-size:12pt;"><em><span style="font-family:Cambria; letter-spacing:0.75pt; color:#4f81bd;">Active Screen</span></em><em><span style="font-family:Cambria; letter-spacing:0.75pt; color:#4f81bd;">&nbsp;&nbsp;</span></em><em><span style="font-family:Cambria; letter-spacing:0.75pt; color:#4f81bd;">- Meter Enquiry</span></em><em><span style="font-family:Cambria; letter-spacing:0.75pt; color:#4f81bd;">&nbsp;&nbsp;</span></em></p>
+<ul type="disc" style="margin:0pt; padding-left:0pt;">
+    <li style="margin-left:55.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Make sure your Mobile Bluetooth is turn on.</span></li>
+    <li style="margin-left:55.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Make sure your</span><span style="font-family:Calibri;">&nbsp;&nbsp;</span><span style="font-family:Calibri;">meter is powered on.</span></li>
+    <li style="margin-left:55.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Select meter serial number from the list that you want to enquiry.</span></li>
+    <li style="margin-left:55.06pt; padding-left:7.94pt; font-family:serif;"><span style="font-family:Calibri;">Please again click on same meter that you have selected.</span></li>
+</ul>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:115%; font-size:16pt;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0pt; margin-bottom:0pt; line-height:115%; font-size:16pt;"><strong>Error</strong><span style="line-height:115%; font-size:11pt;">&nbsp;:</span><span style="line-height:115%; font-size:11pt;">&nbsp;&nbsp;&nbsp;</span></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; text-indent:-18pt;"><span style="font-family:Wingdings;"></span><span style="width:9.26pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Error Massage &quot;Cannot communicate with meter. Either meter is not powered on or it is out of range. Please make sure meter is powered on and locate yourself close to the meter. Then go back, scan the meters and retry. If issue is not resolved, long-press the push-button on meter to reset the Bluetooth and repeat the process.&quot; :-</strong><strong>&nbsp;&nbsp;</strong>Make sure your meter is powered on while you done operation.</p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0pt; margin-left:36pt; margin-bottom:0pt; text-indent:-18pt;"><span style="font-family:Wingdings;"></span><span style="width:9.26pt; font:7pt 'Times New Roman'; display:inline-block;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><strong>Error Massage &quot;Failed to Download data&quot; : -</strong> Please again try.</p>
+<p style="margin-top:0pt; margin-left:18pt; margin-bottom:0pt;">&nbsp;</p>
+<p style="margin-top:0pt; margin-left:27pt; margin-bottom:10pt;"><strong>&nbsp;</strong></p>
+<p style="margin-top:0pt; margin-bottom:10pt;"><strong>&nbsp;</strong></p>
+<p style="bottom: 10px; right: 10px; position: absolute;"><a href="https://wordtohtml.net" target="_blank" style="font-size:11px; color: #d0d0d0;">Converted to HTML with WordToHTML.net</a></p>
